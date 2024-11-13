@@ -6,6 +6,7 @@ import "./index.css";
 import App from "./App.tsx";
 import Layout from "./Layout.tsx";
 import RechartVsChartJSPage from "./pages/RechartVsChartJSPage.tsx";
+import NetworkChartPage from "./pages/NetworkChartPage.tsx";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/network-chart",
-        element: <div></div>,
+        element: <NetworkChartPage />,
       },
     ],
   },

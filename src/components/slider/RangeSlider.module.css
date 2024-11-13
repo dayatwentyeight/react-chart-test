@@ -1,0 +1,62 @@
+.container {
+	position: relative;
+  min-width: 120px;
+  margin: 0 4px;
+}
+
+.inputRange {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 8px;
+  width: 100%;
+  opacity: 0;
+}
+
+.inputRange::-webkit-slider-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 8px;
+	margin: 0;
+}
+
+.track {
+	position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background-color: #e0f2fe;
+}
+
+.range {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background-color: #0284c7;
+}
+
+.thumb {
+  position: absolute;
+  z-index: 3;
+  width: 16px;
+  height: 16px;
+	top: -50%;
+  background-color: #0284c7;
+  border-radius: 50%;
+}
